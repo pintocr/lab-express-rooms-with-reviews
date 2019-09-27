@@ -1,0 +1,19 @@
+<h2>Hello</h2>
+<p>Log-In please</p>
+
+<form action="/login" method="post">
+  <label for="">Username:</label>
+  <input type="text" name="username">
+
+  <label for="">Password:</label>
+  <input type="text" name="password">
+
+  <button type="submit">Log-In</button>
+</form>
+
+
+ <button><a href="/">Return</a></button>
+
+{{#if errorMessage}}
+<div class="error-message">{{ errorMessage }}</div>
+{{/if}}

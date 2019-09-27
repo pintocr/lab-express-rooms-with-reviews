@@ -1,0 +1,29 @@
+<h2>Hello</h2>
+<p>Sign-Up please</p>
+
+<form action="/signup" method="post">
+    <label for="">Username:</label>
+    <input type="text" name="username">
+
+    <label for="">Password:</label>
+    <input type="text" name="password">
+
+    <label for="">E-Mail:</label>
+    <input type="text" name="email">
+
+    <label for="">Slack Id*:</label>
+    <input type="text" name="slackID">
+
+    <label for="">Google Id*:</label>
+    <input type="text" name="googleID">
+
+    <button type="submit">Sign-Up</button>
+</form>
+
+<button><a href="/">Return</a></button>
+
+<p>* Optional</p>
+
+{{#if errorMessage}}
+<div class="error-message">{{ errorMessage }}</div>
+{{/if}}

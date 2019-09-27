@@ -1,0 +1,18 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+<a href="/signup">Sign-Up</a>
+<a href="/login">Log-In</a>
+<a href="/rooms">Rooms</a>
+
+  <form action="/logout" method="post">
+  {{#if hidden.show}}
+<button type="submit">Log-Out</button>
+{{/if}}
+</form>
+
+
+ 
+  {{#if hidden.show}}
+<a href="/createRoom">Create Rooms</a>
+{{/if}}
